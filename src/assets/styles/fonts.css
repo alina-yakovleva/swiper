@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/circe.woff") format("woff"),
+    url("../fonts/circe.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy.woff") format("woff"),
+    url("../fonts/gilroy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DIN Pro";
+  src: url("../fonts/din-pro.woff") format("woff"),
+    url("../fonts/din-pro.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DIN Pro";
+  font-weight: bold;
+  src: url("../fonts/din-pro-bold.woff") format("woff"),
+    url("../fonts/din-pro-bold.woff2") format("woff2");
+}

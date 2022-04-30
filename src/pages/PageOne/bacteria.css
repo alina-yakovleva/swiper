@@ -1,0 +1,90 @@
+.bacterium-1 {
+  width: 73px;
+  height: 71px;
+  position: absolute;
+  top: 505px;
+  left: 22px;
+  background-image: url("../../assets/img/bacteria/1.svg");
+  background-size: contain;
+}
+
+.bacterium-2 {
+  position: absolute;
+  width: 227px;
+  height: 224px;
+  top: 642px;
+  right: 254px;
+  background-image: url("../../assets/img/bacteria/2.svg");
+  background-size: contain;
+}
+.bacterium-3 {
+  position: absolute;
+  top: 200px;
+  right: 51px;
+  width: 110px;
+  height: 113px;
+  background-image: url("../../assets/img/bacteria/3.svg");
+  background-size: contain;
+}
+.bacterium-4 {
+  position: absolute;
+  width: 62px;
+  height: 57px;
+  right: 217px;
+  top: 63px;
+  background-image: url("../../assets/img/bacteria/4.svg");
+  background-size: contain;
+}
+
+.bacterium-5 {
+  position: absolute;
+  bottom: 62px;
+  left: 345px;
+  width: 85px;
+  height: 78px;
+  background-image: url("../../assets/img/bacteria/5.svg");
+  background-size: contain;
+}
+
+.bacterium-6 {
+  position: absolute;
+  top: 34px;
+  right: 40px;
+  width: 85px;
+  height: 78px;
+  background-image: url("../../assets/img/bacteria/5.svg");
+  background-size: contain;
+  opacity: 0.3;
+}
+
+.bacterium-7 {
+  position: absolute;
+  top: 72px;
+  left: -88px;
+  height: 116px;
+  width: 214px;
+  background-image: url("../../assets/img/bacteria/6.svg");
+  background-size: contain;
+}
+
+.pink-sperm1 {
+  position: absolute;
+  top: 151px;
+  width: 641px;
+  right: -44px;
+  z-index: 1;
+}
+.pink-sperm2 {
+  position: absolute;
+  bottom: -5px;
+  width: 400px;
+  left: -127px;
+}
+
+.chips {
+  position: absolute;
+  top: 15px;
+  left: -81px;
+  height: 231px;
+  width: 206px;
+}

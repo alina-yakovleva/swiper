@@ -1,0 +1,89 @@
+.home-icon {
+  width: 22px;
+  height: 22px;
+  background: url("../img/icons/home.svg");
+  background-size: contain;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 14px;
+  background: url("../img/icons/arrow.svg");
+  background-size: contain;
+}
+.plate-icon {
+  background: url("../img/icons/plate.png") no-repeat;
+  width: 67px;
+  background-size: contain;
+  height: 63px;
+}
+.calendar-icon {
+  background: url("../img/icons/calendar.png") no-repeat;
+  background-size: contain;
+  width: 70px;
+  height: 57px;
+}
+
+.plus-icon {
+  position: relative;
+  width: 13px;
+  height: 13px;
+}
+
+.plus-icon::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  height: 2px;
+  width: 100%;
+
+  transform: translateY(-50%);
+
+  background-color: white;
+}
+
+.plus-icon::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 0;
+
+  height: 100%;
+  width: 2px;
+
+  transform: translateX(-50%);
+
+  background-color: white;
+}
+
+.close-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.close-icon:before,
+.close-icon:after {
+  position: absolute;
+  left: 17px;
+  content: " ";
+  height: 35px;
+  width: 2px;
+  background-color: #000;
+}
+.close-icon:before {
+  transform: rotate(45deg);
+}
+.close-icon:after {
+  transform: rotate(-45deg);
+}
+
+.pagination-icon {
+  width: 9px;
+  height: 15px;
+  background-image: url("../img/icons/pagination-arrow.png");
+  background-size: contain;
+}

@@ -1,0 +1,60 @@
+.sperm-3 {
+  position: absolute;
+  top: 94px;
+  left: 359px;
+
+  width: 1229px;
+  height: 753px;
+
+  background-image: url("../../assets/img/sperms/3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sperm-4 {
+  position: absolute;
+  right: -338px;
+  top: 100px;
+
+  width: 783px;
+  height: 480px;
+
+  background-image: url("../../assets/img/sperms/4.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sperm-5 {
+  position: absolute;
+  width: 440px;
+  height: 270px;
+  width: 370px;
+  right: -59px;
+  top: 78px;
+  background-image: url("../../assets/img/sperms/5.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sperm-6 {
+  position: absolute;
+  top: 412px;
+  left: 892px;
+  width: 783px;
+  height: 388px;
+  background-image: url("../../assets/img/sperms/6.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sperm-7 {
+  position: absolute;
+
+  left: 890px;
+  bottom: 39px;
+  width: 343px;
+  height: 214px;
+  background-image: url("../../assets/img/sperms/7.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

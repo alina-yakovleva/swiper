@@ -1,0 +1,56 @@
+.page_three .title {
+  text-transform: uppercase;
+  margin-left: 278px;
+  margin-bottom: 75px;
+}
+.page_three .title__sup {
+  font-size: 29px;
+  letter-spacing: 3px;
+  color: #242424;
+  font-family: "DIN Pro";
+  letter-spacing: 3px;
+}
+.page_three .title__main {
+  font-size: 93px;
+  line-height: 113px;
+  letter-spacing: 13px;
+  color: #242424;
+  font-family: "Gilroy";
+}
+
+.columns {
+  display: flex;
+  gap: 66px;
+  margin-left: 191px;
+}
+
+.note {
+  border-radius: 40px;
+  background-color: white;
+  position: relative;
+
+  font-size: 24px;
+  color: #2e2e2e;
+  font-family: "DIN Pro";
+
+  line-height: 32px;
+  filter: drop-shadow(5.446px 8.387px 125px rgba(157, 185, 198, 0.39));
+}
+.note_1 {
+  width: 414px;
+  padding: 45px 40px 45px 129px;
+}
+.note_2 {
+  margin-bottom: 35px;
+  padding: 42px;
+}
+.note_1 [class*="-icon"] {
+  position: absolute;
+  left: 92px;
+  top: -25px;
+}
+.note_2 [class*="-icon"] {
+  position: absolute;
+  left: 40px;
+  top: -15px;
+}

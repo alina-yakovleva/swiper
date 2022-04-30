@@ -1,0 +1,30 @@
+.page_one .title {
+  position: relative;
+  margin-top: -91px;
+  z-index: 1;
+}
+
+.page_one .title__sup {
+  font-size: 27px;
+  letter-spacing: 4px;
+  line-height: 70px;
+  color: #242424;
+  font-family: "Gilroy";
+  text-transform: uppercase;
+}
+
+.page_one .title__main {
+  font-size: 99px;
+  letter-spacing: 14px;
+  line-height: 117px;
+  color: #171717;
+  font-weight: 500;
+  font-family: "Gilroy";
+  text-transform: uppercase;
+}
+
+.page_one .title__main__footer {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}

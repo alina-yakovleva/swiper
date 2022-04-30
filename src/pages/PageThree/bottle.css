@@ -1,0 +1,133 @@
+.bottle-container {
+  position: absolute;
+  left: 47px;
+  bottom: 0;
+
+  height: 698px;
+  width: 239px;
+
+  z-index: 1;
+}
+
+.bottle {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  background: url("../../assets/img/bottle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 1;
+}
+
+.bubble-1 {
+  position: absolute;
+  bottom: -71px;
+  right: -38px;
+
+  width: 142px;
+  height: 142px;
+
+  background-image: url("../../assets/img/bubbles/1.png");
+  background-size: contain;
+
+  z-index: 1;
+}
+.bubble-2 {
+  position: absolute;
+  bottom: 140px;
+  left: -24px;
+
+  width: 75px;
+  height: 75px;
+
+  background-image: url("../../assets/img/bubbles/2.png");
+  background-size: contain;
+
+  z-index: 1;
+}
+.bubble-3 {
+  position: absolute;
+  bottom: 279px;
+  left: -40px;
+
+  width: 36px;
+  height: 36px;
+
+  background-image: url("../../assets/img/bubbles/3.png");
+  background-size: contain;
+}
+.bubble-4 {
+  position: absolute;
+  top: 85px;
+  right: 34px;
+
+  width: 71px;
+  height: 71px;
+
+  background-image: url("../../assets/img/bubbles/4.png");
+  background-size: contain;
+
+  z-index: 1;
+}
+
+.bubble-4 {
+  position: absolute;
+  top: 85px;
+  right: 34px;
+
+  width: 71px;
+  height: 71px;
+
+  background-image: url("../../assets/img/bubbles/4.png");
+  background-size: contain;
+}
+
+.bubble-5 {
+  position: absolute;
+  bottom: 115px;
+  right: -18px;
+
+  width: 62px;
+  height: 62px;
+
+  background-image: url("../../assets/img/bubbles/5.png");
+  background-size: contain;
+}
+
+.bubble-6 {
+  position: absolute;
+  bottom: 339px;
+  right: -13px;
+
+  width: 112px;
+  height: 112px;
+
+  background-image: url("../../assets/img/bubbles/6.png");
+  background-size: contain;
+}
+
+.bubble-7 {
+  position: absolute;
+  left: 30px;
+  top: 143px;
+
+  width: 34px;
+  height: 34px;
+
+  background-image: url("../../assets/img/bubbles/7.png");
+  background-size: contain;
+}
+
+.bubble-8 {
+  position: absolute;
+  right: 52px;
+  top: -3px;
+
+  width: 32px;
+  height: 32px;
+
+  background-image: url("../../assets/img/bubbles/8.png");
+  background-size: contain;
+}

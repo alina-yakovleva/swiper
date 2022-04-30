@@ -1,0 +1,25 @@
+.sperm-1 {
+  position: absolute;
+  top: 155px;
+  right: 0;
+
+  width: 592px;
+  height: 93px;
+
+  z-index: 1;
+
+  background-image: url("../../assets/img/sperms/1.svg");
+  background-size: contain;
+}
+
+.sperm-2 {
+  position: absolute;
+  bottom: -5px;
+  left: -127px;
+
+  width: 414px;
+  height: 183px;
+
+  background-image: url("../../assets/img/sperms/2.svg");
+  background-size: contain;
+}
