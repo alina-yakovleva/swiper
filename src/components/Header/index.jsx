@@ -1,9 +1,13 @@
+import { usePage } from "../../hooks/usePage";
+
 import "./index.css";
 
 const Header = () => {
+  const [, setPage] = usePage();
+
   return (
     <div className="header">
-      <div className="home-icon clickable" />
+      <div onClick={() => setPage(0)} className="home-icon clickable" />
       <div className="vert-divider" />
       <div className="header__title">PROJECT</div>
     </div>
