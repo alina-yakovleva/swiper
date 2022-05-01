@@ -89,3 +89,12 @@
 .page_two .article__text::-webkit-scrollbar {
   display: none;
 }
+
+.page_two.animate .sperm-3,
+.page_two.animate .sperm-4,
+.page_two.animate .sperm-5,
+.page_two.animate .sperm-6,
+.page_two.animate .sperm-7 {
+  transform: translate(0);
+  opacity: 1;
+}

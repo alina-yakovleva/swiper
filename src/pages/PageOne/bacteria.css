@@ -6,6 +6,11 @@
   left: 22px;
   background-image: url("../../assets/img/bacteria/1.svg");
   background-size: contain;
+
+  animation-name: bacterium-1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .bacterium-2 {
@@ -16,6 +21,11 @@
   right: 254px;
   background-image: url("../../assets/img/bacteria/2.svg");
   background-size: contain;
+
+  animation-name: bacterium-2;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .bacterium-3 {
   position: absolute;
@@ -25,6 +35,13 @@
   height: 113px;
   background-image: url("../../assets/img/bacteria/3.svg");
   background-size: contain;
+
+  animation-name: bacterium-3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  z-index: 2;
 }
 .bacterium-4 {
   position: absolute;
@@ -67,24 +84,44 @@
   background-size: contain;
 }
 
-.pink-sperm1 {
-  position: absolute;
-  top: 151px;
-  width: 641px;
-  right: -44px;
-  z-index: 1;
-}
-.pink-sperm2 {
-  position: absolute;
-  bottom: -5px;
-  width: 400px;
-  left: -127px;
+@keyframes bacterium-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(20px, -50px) scale(0.8) rotate(-45deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
-.chips {
-  position: absolute;
-  top: 15px;
-  left: -81px;
-  height: 231px;
-  width: 206px;
+@keyframes bacterium-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 5px) scale(1.1) rotate(5deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bacterium-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-20px, -40px) scale(1.1) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }

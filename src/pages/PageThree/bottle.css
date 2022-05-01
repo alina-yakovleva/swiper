@@ -32,6 +32,11 @@
   background-image: url("../../assets/img/bubbles/1.png");
   background-size: contain;
 
+  animation-name: bubble-1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
   z-index: 1;
 }
 .bubble-2 {
@@ -44,6 +49,11 @@
 
   background-image: url("../../assets/img/bubbles/2.png");
   background-size: contain;
+
+  animation-name: bubble-2;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 
   z-index: 1;
 }
@@ -68,6 +78,11 @@
 
   background-image: url("../../assets/img/bubbles/4.png");
   background-size: contain;
+
+  animation-name: bubble-4;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 
   z-index: 1;
 }
@@ -118,6 +133,11 @@
 
   background-image: url("../../assets/img/bubbles/7.png");
   background-size: contain;
+
+  animation-name: bubble-7;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .bubble-8 {
@@ -130,4 +150,60 @@
 
   background-image: url("../../assets/img/bubbles/8.png");
   background-size: contain;
+}
+
+@keyframes bubble-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(20px, -20px) scale(0.8) rotate(-45deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bubble-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 10px) scale(1.1) rotate(35deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bubble-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(50px, -30px) scale(0.8) rotate(-90deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bubble-7 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-20px, -10px) scale(1.1) rotate(90deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }

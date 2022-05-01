@@ -3,13 +3,25 @@ import { useEffect, useRef, useState } from "react";
 import Header from "../../components/Header";
 import Layout from "../../components/Layout";
 
+import { usePage } from "../../hooks/usePage";
+
 import "./index.css";
 import "./sperms.css";
 
 const PageTwo = () => {
   const [height, setHeight] = useState(0);
+  const [show, setShow] = useState(false);
   const scrollHeightRef = useRef(0);
   const scrollbarRef = useRef(null);
+  const [page] = usePage();
+
+  useEffect(() => {
+    if (page === 1) {
+      setShow(true);
+    }
+
+    return () => setShow(false);
+  }, [page]);
 
   useEffect(() => {
     scrollHeightRef.current =
@@ -26,8 +38,14 @@ const PageTwo = () => {
     setHeight(finalHeight);
   };
 
+  const pageClasses = ["page_two"];
+
+  if (show) {
+    pageClasses.push("animate");
+  }
+
   return (
-    <Layout className="page_two">
+    <Layout className={pageClasses.join(" ")}>
       <Header />
 
       <div className="content">

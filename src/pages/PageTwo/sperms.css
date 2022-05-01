@@ -9,6 +9,10 @@
   background-image: url("../../assets/img/sperms/3.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
+  transition: all 1s ease-out;
+  transform: translate(200px, 50px);
+  opacity: 0;
 }
 
 .sperm-4 {
@@ -22,6 +26,11 @@
   background-image: url("../../assets/img/sperms/4.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
+  transition: all 1s ease-out;
+  transition-delay: 0.3s;
+  transform: translate(200px, 50px);
+  opacity: 0;
 }
 
 .sperm-5 {
@@ -34,6 +43,11 @@
   background-image: url("../../assets/img/sperms/5.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
+  transition: all 1s ease-out;
+  transition-delay: 0.4s;
+  transform: translate(200px, 50px);
+  opacity: 0;
 }
 
 .sperm-6 {
@@ -45,6 +59,11 @@
   background-image: url("../../assets/img/sperms/6.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
+  transition: all 1s ease-out;
+  transition-delay: 1s;
+  transform: translate(200px, 50px);
+  opacity: 0;
 }
 
 .sperm-7 {
@@ -57,4 +76,9 @@
   background-image: url("../../assets/img/sperms/7.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
+  transition: all 1s ease-out;
+  transition-delay: 1s;
+  transform: translate(200px, 50px);
+  opacity: 0;
 }
