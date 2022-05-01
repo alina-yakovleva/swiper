@@ -14,6 +14,11 @@ function App() {
   const startRef = useRef(0);
   const endRef = useRef(0);
 
+  const reset = () => {
+    startRef.current = 0;
+    endRef.current = 0;
+  };
+
   const changeSlide = (start, end) => {
     if (start - end > 50) {
       if (page < 2) {
@@ -26,6 +31,8 @@ function App() {
         setPage(page - 1);
       }
     }
+
+    reset();
   };
 
   function handleTouchStart(e) {

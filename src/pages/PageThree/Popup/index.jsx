@@ -1,6 +1,49 @@
+import { useState } from "react";
+
 import "./index.css";
 
+const data = [
+  [
+    {
+      number: "01",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      number: "02",
+      description: "Lorem ipsum dolor sit amet. ipsum dolor sit amet",
+    },
+    {
+      number: "03",
+      description: "Lorem ipsum dolor sit amet.",
+    },
+  ],
+  [
+    {
+      number: "04",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      number: "05",
+      description: "Lorem ipsum dolor sit amet. sit amet",
+    },
+    {
+      number: "06",
+      description: "Lorem ipsum dolor amet. sit amet",
+    },
+  ],
+];
+
 const Popup = ({ open, onClose }) => {
+  const [index, setIndex] = useState(1);
+
+  const changeIndex = (number) => {
+    const result = index + number;
+
+    if (result >= 0 && result < data.length) {
+      setIndex(result);
+    }
+  };
+
   if (!open) {
     return null;
   }
@@ -18,33 +61,33 @@ const Popup = ({ open, onClose }) => {
         </div>
 
         <div className="list">
-          <div className="list__item">
-            <div className="list__item__number">01</div>
-            <div className="list__item__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          {data[index].map((item) => (
+            <div className="list__item" key={item.number}>
+              <div className="list__item__number">{item.number}</div>
+              <div className="list__item__description">{item.description}</div>
             </div>
-          </div>
-
-          <div className="list__item">
-            <div className="list__item__number">02</div>
-            <div className="list__item__description">
-              Lorem ipsum dolor sit amet.
-            </div>
-          </div>
-
-          <div className="list__item">
-            <div className="list__item__number">03</div>
-            <div className="list__item__description">
-              Lorem ipsum dolor sit amet.
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="pagination">
-          <div className="pagination-icon clickable" />
-          <div className="pagination__bullet pagination__bullet_active clickable" />
-          <div className="pagination__bullet clickable" />
-          <div className="pagination-icon pagination-icon_revert clickable" />
+          <div
+            onClick={() => changeIndex(-1)}
+            className="pagination-icon clickable"
+          />
+          {data.map((item, i) => (
+            <div
+              onClick={() => setIndex(i)}
+              className={
+                i === index
+                  ? "pagination__bullet clickable pagination__bullet_active"
+                  : "pagination__bullet clickable"
+              }
+            />
+          ))}
+          <div
+            onClick={() => changeIndex(1)}
+            className="pagination-icon pagination-icon_revert clickable"
+          />
         </div>
       </div>
     </div>
