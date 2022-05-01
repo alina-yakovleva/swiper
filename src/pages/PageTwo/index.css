@@ -14,6 +14,41 @@
   text-transform: uppercase;
 }
 
+.page_two .article-container {
+  display: flex;
+  gap: 26px;
+}
+
+.scrollbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 20px;
+}
+
+.scrollbar__way {
+  height: 100%;
+  width: 5px;
+
+  border-radius: 2px;
+
+  background-color: black;
+}
+
+.scrollbar__thumb {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 104px;
+
+  border-radius: 10px;
+  background-color: #cf578d;
+
+  transition: transform 0.5s ease-in-out;
+}
+
 .page_two .article {
   position: relative;
   z-index: 1;
