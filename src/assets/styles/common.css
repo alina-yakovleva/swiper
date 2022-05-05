@@ -14,14 +14,14 @@ body {
 
   overflow: hidden;
 
-  background: url("../img/bg.svg");
+  background: url("../img/bg.png");
   background-size: cover;
 }
 
 .logo {
   width: 57px;
   height: 12px;
-  background: url("../img/logo.svg");
+  background: url("../img/logo.png");
   background-size: contain;
   z-index: 100;
 }
