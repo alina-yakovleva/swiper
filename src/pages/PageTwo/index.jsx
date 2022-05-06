@@ -9,11 +9,15 @@ import "./index.css";
 import "./sperms.css";
 
 const PageTwo = () => {
-  const [height, setHeight] = useState(0);
   const [show, setShow] = useState(false);
-  const scrollHeightRef = useRef(0);
-  const scrollbarRef = useRef(null);
+  const [range, setRange] = useState(100);
+  const scrollRef = useRef(null);
   const [page] = usePage();
+
+  useEffect(() => {
+    const y = ((100 - range) * scrollRef.current.scrollHeight) / 100;
+    scrollRef.current?.scrollTo(0, y);
+  }, [range]);
 
   useEffect(() => {
     if (page === 1) {
@@ -22,21 +26,6 @@ const PageTwo = () => {
 
     return () => setShow(false);
   }, [page]);
-
-  useEffect(() => {
-    scrollHeightRef.current =
-      parseInt(getComputedStyle(scrollbarRef.current).height) - 104;
-  }, []);
-
-  const handleScroll = (e) => {
-    const percent =
-      (e.target.scrollTop / (e.target.scrollHeight - e.target.clientHeight)) *
-      100;
-
-    const finalHeight = (scrollHeightRef.current * percent) / 100;
-
-    setHeight(finalHeight);
-  };
 
   const pageClasses = ["page_two"];
 
@@ -53,18 +42,21 @@ const PageTwo = () => {
           <div>Текст</div>
           <div>сообщения</div>
         </div>
+
         <div className="article-container">
-          <div ref={scrollbarRef} className="scrollbar">
-            <div
-              style={{
-                transform: `translateY(${height}px)`,
-              }}
-              className="scrollbar__thumb"
+          <div className="range-slider-container">
+            <input
+              className="range-slider"
+              onChange={(e) => setRange(e.target.value)}
+              value={range}
+              type="range"
+              step="1"
+              min="0"
+              max="100"
             />
-            <div className="scrollbar__way" />
           </div>
           <div className="article">
-            <div onScroll={handleScroll} className="article__text">
+            <div ref={scrollRef} className="article__text">
               <b> Lorem ipsum dolor sit amet,</b>
               consectetur adipisicing elit. Explicabo ipsam omnis esse repellat
               similique, reprehenderit magni, fugit nihil aut quaerat dolore
