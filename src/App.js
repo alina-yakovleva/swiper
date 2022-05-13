@@ -20,6 +20,10 @@ function App() {
   };
 
   const changeSlide = (start, end) => {
+    if (!end) {
+      return;
+    }
+
     if (start - end > 50) {
       if (page < 2) {
         setPage(page + 1);

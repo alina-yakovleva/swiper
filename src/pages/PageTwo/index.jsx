@@ -15,7 +15,11 @@ const PageTwo = () => {
   const [page] = usePage();
 
   useEffect(() => {
-    const y = ((100 - range) * scrollRef.current.scrollHeight) / 100;
+    const clientHeight = scrollRef.current.clientHeight;
+    const scrollHeight = scrollRef.current.scrollHeight;
+
+    const y = Math.round(((100 - range) * (scrollHeight - clientHeight)) / 100);
+
     scrollRef.current?.scrollTo(0, y);
   }, [range]);
 
@@ -32,7 +36,9 @@ const PageTwo = () => {
   if (show) {
     pageClasses.push("animate");
   }
-
+  const stopPropagation = (e) => {
+    e.stopPropagation();
+  };
   return (
     <Layout className={pageClasses.join(" ")}>
       <Header />
@@ -44,7 +50,11 @@ const PageTwo = () => {
         </div>
 
         <div className="article-container">
-          <div className="range-slider-container">
+          <div
+            className="range-slider-container"
+            onMouseUp={stopPropagation}
+            onTouchEnd={stopPropagation}
+          >
             <input
               className="range-slider"
               onChange={(e) => setRange(e.target.value)}
